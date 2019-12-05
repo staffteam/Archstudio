@@ -1,0 +1,235 @@
+@import './plus.less';
+
+.product {
+    overflow: hidden;
+    min-height: calc(~"100vh - 150px");
+
+    ul {
+        width: 99%;
+        margin: 0 auto;
+        padding: 0.5vw 0;
+        overflow: hidden;
+
+        li {
+            margin: 0.8vw 0.8%;
+            width: 48.4%;
+            float: left;
+            height: 24vw;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                div {
+                    opacity: 0;
+                }
+
+                p {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            p {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    transition: 0.5s transform;
+                }
+            }
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                padding-top: 9vw;
+                opacity: 1;
+                transition: 0.5s opacity;
+
+                h2,
+                p {
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                h2 {
+                    font-size: 2vw;
+                }
+
+                p {
+                    font-size: 1.3vw;
+                    margin-top: 0.2vw;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+.product-list {
+    overflow: hidden;
+    min-height: calc(~"100vh - 150px");
+
+    ul {
+        width: 99%;
+        margin: 0 auto;
+        padding: 0.5vw 0;
+        overflow: hidden;
+
+        li {
+            margin: 0.8vw 0.8%;
+            width: calc(~"95% / 3");
+            float: left;
+            height: 15.9vw;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                div {
+                    opacity: 1;
+                }
+
+                p {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            p {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    transition: 0.5s transform;
+                }
+            }
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                padding-top: 5vw;
+                opacity: 0;
+                transition: 0.5s opacity;
+
+                h2,
+                p {
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                h2 {
+                    font-size: 1vw;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 2vw;
+                    margin-top: 0.2vw;
+                }
+
+                span {
+                    display: block;
+                    font-size: 1vw;
+                    margin-top: 0.2vw;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+
+@media (max-width:1000px) {
+    .product {
+        overflow: hidden;
+        min-height: calc(~"100vh - 9rem");
+
+        ul {
+            width: 100%;
+            padding: 0 0;
+            margin-bottom: 0.6rem;
+
+            li {
+                margin: 0.6rem 2.5% 0;
+                width: 95%;
+                height: 48vw;
+
+                div {
+                    padding-top: 18vw;
+
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        margin-top: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-list {
+        overflow: hidden;
+        min-height: calc(~"100vh - 9rem");
+
+        ul {
+            width: 100%;
+            padding: 0 0;
+            margin-bottom: 0.6rem;
+
+            li {
+                margin: 0.6rem 2.5% 0;
+                width: 95%;
+                height: 48vw;
+
+                div {
+                    padding-top: 15vw;
+                    opacity: 1;
+
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 0.2rem;
+                    }
+
+                    span {
+                        margin-top: 0.2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 1rem 0;
+        background-color: #f5f5f5;
+    }
+}

@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="/ContentWeb/css/index.css">
+<script src="/ContentWeb/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="/ContentWeb/swiper/css/swiper.min.css">
+<div class="home-banner">
+    <img src="/ContentWeb/images/home_banner.jpg" alt="">
+</div>
+
+<div class="home-main">
+    <div class="swiper-container" id="homeSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p>理念 | Philosophy</p>
+                    <h2>空间即媒介</h2>
+                    <span class="a">Space is Medium</span>
+                    <span class="b">——韩文强，建筑营Archstudio创始人/主持建筑师</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p>方法论 | Methodology</p>
+                    <h2>关系的设计</h2>
+                    <span class="a">Design is About Handling Relations</span>
+                    <span class="b">——韩文强，建筑营Archstudio创始人/主持建筑师</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="swiper-container" id="homeSwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <a href="/productList">
+                        <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                        <div>
+                            <h2>建筑</h2>
+                            <p>Architecture</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <a href="/productList">
+                        <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                        <div>
+                            <h2>改造</h2>
+                            <p>Reconstruction</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <a href="/productList">
+                        <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                        <div>
+                            <h2>室内</h2>
+                            <p>Interior</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <a href="/productList">
+                        <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                        <div>
+                            <h2>产品</h2>
+                            <p>Product</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.home-banner img').css({
+            'transform': 'scale(1)'
+        });
+        var mySwiper = new Swiper('#homeSwiper', {
+            loop: true, // 循环模式选项
+            speed: 800,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            }
+        })
+        if ($(window).width() > 1000) {
+            var mySwiper2 = new Swiper('#homeSwiper2', {
+                slidesPerView: 4,
+            })
+        } else {
+            var mySwiper2 = new Swiper('#homeSwiper2', {
+                slidesPerView: 2,
+            })
+        }
+    })
+</script>

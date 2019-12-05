@@ -1,0 +1,127 @@
+@import './plus.less';
+
+.study {
+    padding: 2vw 0 0;
+    height: 36vw;
+    overflow: hidden;
+
+    .swiper-slide {
+        background-color: #f4f4f4;
+
+        .slide {
+            padding: 10vw 2vw;
+            overflow: hidden;
+
+            .l {
+                width: 35%;
+                float: left;
+
+                p {
+                    font-size: 1.8vw;
+                    color: rgba(59, 59, 59, 1);
+                }
+
+                h2 {
+                    font-size: 6vw;
+                    font-weight: 500;
+                    color: rgba(59, 59, 59, 1);
+
+                }
+
+                span.a {
+                    font-size: 3vw;
+                    color: rgba(59, 59, 59, 1);
+                    display: block;
+                }
+            }
+
+            .c {
+                float: left;
+                width: 5%;
+                margin-left: 10%;
+                position: relative;
+                height: 18vw;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    border-right: 2px solid #3E3E3E;
+                    height: 100%;
+                    transform: rotate(15deg);
+                }
+            }
+
+            .r {
+                float: right;
+                width: 40%;
+                line-height: 1.5;
+
+                p {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .study {
+        padding: 1rem 0 0;
+        height: auto;
+
+        .swiper-slide {
+
+            .slide {
+                padding: 2rem 1rem;
+
+                .l {
+                    width: 80%;
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    h2 {
+                        font-size: 2.5rem;
+                        margin-top: 0.5rem;
+
+                    }
+
+                    span.a {
+                        font-size: 1.2rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+
+                .c {
+                    float: right;
+                    width: 100%;
+                    position: relative;
+                    height: 6rem;
+                    margin: 3.5rem 0;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        border-right: 2px solid #3E3E3E;
+                        height: 100%;
+                        left: 50%;
+                        transform: rotate(15deg);
+                    }
+                }
+
+                .r {
+                    float: right;
+                    width: 100%;
+                    margin-top: 1rem;
+                    line-height: 1.5;
+
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}

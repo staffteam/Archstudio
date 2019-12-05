@@ -10,24 +10,24 @@ let route = [
         page:'/index.html'
     },
     {
-        title:'关于我们',
-        route:'/aboutus',
-        page:'/aboutus.html'
-    },
-    {
-        title:'产品中心',
+        title:'作品',
         route:'/product',
         page:'/product.html'
     },
     {
-        title:'产品中心详情',
-        route:'/productDetails',
-        page:'/productDetails.html'
+        title:'研究',
+        route:'/study',
+        page:'/study.html'
     },
     {
-        title:'案例中心',
-        route:'/case',
-        page:'/case.html'
+        title:'作品列表',
+        route:'/productList',
+        page:'/productList.html'
+    },
+    {
+        title:'作品详情',
+        route:'/productDetail',
+        page:'/productDetail.html'
     },
     {
         title:'新闻中心',

@@ -1,0 +1,207 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+  height: 100px;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.header .content {
+  height: 100%;
+}
+.header .content div.logo {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .content div.logo img {
+  max-height: 100%;
+}
+.header .content div.wap-btn {
+  display: none;
+}
+.header .content div.r .wap-close {
+  display: none;
+}
+.header .content div.r div.nav {
+  display: inline-block;
+  margin-right: 3vw;
+}
+.header .content div.r div.nav ul li {
+  display: inline-block;
+  position: relative;
+}
+.header .content div.r div.nav ul li a.on {
+  color: black;
+  font-weight: 600;
+}
+.header .content div.r div.nav ul li:hover > a {
+  color: black;
+  font-weight: 600;
+}
+.header .content div.r div.nav ul li > a {
+  padding: 30px 1vw;
+  display: block;
+  line-height: 40px;
+  font-size: 22px;
+  transition: 0.1s all;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+.header .content div.r div.nav ul li div {
+  background: #ffffff;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s height, 0.5s opacity, 0.5s margin-top;
+}
+.header .content div.r div.nav ul li div a {
+  font-size: 16px;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+}
+.header .content div.r div.nav ul li div a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.header .content div.r div.language {
+  float: right;
+  line-height: 100px;
+  font-size: 22px;
+}
+.header .content div.r div.language span {
+  cursor: pointer;
+}
+.header.en .content div.r div.nav ul li > a {
+  font-size: 18px;
+}
+.header.en .content div.r div.nav ul li div a {
+  font-size: 14px;
+}
+.header-h {
+  height: 100px;
+}
+@media (max-width: 1000px) {
+  div.header {
+    height: 4.5rem;
+  }
+  div.header div.content div.logo {
+    width: 10rem;
+  }
+  div.header div.content div.wap-btn {
+    display: block;
+    float: right;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    position: relative;
+  }
+  div.header div.content div.wap-btn i {
+    font-size: 2rem;
+  }
+  div.header div.content div.r {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    opacity: 0;
+    background-color: #333333;
+  }
+  div.header div.content div.r .wap-close {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  div.header div.content div.r .wap-close i {
+    color: white;
+    font-size: 2rem;
+  }
+  div.header div.content div.r div.nav {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 0;
+  }
+  div.header div.content div.r div.nav ul li {
+    display: block;
+    margin-top: 2rem;
+  }
+  div.header div.content div.r div.nav ul li:first-child {
+    margin-top: 0;
+  }
+  div.header div.content div.r div.nav ul li.on {
+    font-weight: 600;
+  }
+  div.header div.content div.r div.nav ul li > a {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0;
+  }
+  div.header div.content div.r div.nav ul li > a:hover {
+    color: white;
+  }
+  div.header div.content div.r div.nav ul li div {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    background-color: #333333;
+  }
+  div.header div.content div.r div.nav ul li div a {
+    color: white;
+    padding: 0;
+    line-height: 2.5rem;
+  }
+  div.header div.content div.r .language {
+    position: absolute;
+    bottom: 4rem;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+  }
+  div.header div.content div.r .language span {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+  }
+  div.header.en div.content div.r {
+    display: block;
+    opacity: 1;
+  }
+  div.header.en div.content div.r div.nav ul li {
+    margin: 2rem auto 0;
+  }
+  div.header.en div.content div.r div.nav ul li > a {
+    font-size: 1.5rem;
+  }
+  div.header.en div.content div.r div.nav ul li div a {
+    font-size: 1.2rem;
+  }
+  .header-h {
+    height: 4.5rem;
+  }
+}

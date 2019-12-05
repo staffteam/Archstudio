@@ -1,0 +1,247 @@
+@import './plus.less';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    height: 100px;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    .content {
+        height: 100%;
+
+        div.logo {
+            float: left;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+        div.wap-btn {
+            display: none;
+        }
+
+        div.r {
+            .wap-close{
+                display: none;
+            }
+            div.nav {
+                display: inline-block;
+                margin-right: 3vw;
+
+                ul {
+                    li {
+                        display: inline-block;
+                        position: relative;
+                        a.on {
+                            color: black;
+                            font-weight: 600;
+                        }
+                        &:hover {
+                            &>a{
+                                color: black;
+                                font-weight: 600;
+                            }
+                        }
+                        &>a {
+                            padding: 30px 1vw;
+                            display: block;
+                            line-height: 40px;
+                            font-size: 22px;
+                            transition: 0.1s all;
+                            font-weight: 400;
+                            color: #333333;
+                            text-align: center;
+                        }
+
+                        div {
+                            background: rgba(255, 255, 255, 1);
+                            opacity: 0.9;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 100px;
+                            width:100%;
+                            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                            height: 0;
+                            opacity: 0;
+                            overflow: hidden;
+                            transition: 0.5s height,0.5s opacity,0.5s margin-top;
+                            a {
+                                font-size: 16px;
+                                display: block;
+                                padding: 15px 0;
+                                text-align: center;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.language {
+                float: right;
+                line-height: 100px;
+                font-size: 22px;
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &.en{
+        .content{
+            div.r{
+                div.nav{
+                    ul{
+                        li{
+                            &>a{
+                                font-size:18px;
+                            }
+                            div{
+                                a{
+                                    font-size:14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header-h{
+    height: 100px;
+}
+
+@media (max-width:1000px){
+    div.header{
+        height: 4.5rem;
+        div.content{
+            div.logo{
+                width: 10rem;
+            }
+            div.wap-btn{
+                display: block;
+                float: right;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 1rem 0;
+                text-align: center;
+                line-height: 2.5rem;
+                position: relative;
+                i{
+                    font-size:2rem;
+                }
+            }
+            div.r{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                display: none;
+                opacity: 0;
+                background-color: #333333;
+                .wap-close{
+                    display: block;
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    i{
+                        color: white;
+                        font-size:2rem;
+                    }
+                }
+                div.nav{
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    margin-right: 0;
+                    ul{
+                        li{
+                            display: block;
+                            margin-top: 2rem;
+                            &:first-child{
+                                margin-top: 0;
+                            }
+                            &.on{
+                                font-weight: 600;
+                            }
+                            &>a{
+                                color: white;
+                                font-size:1.5rem;
+                                line-height: 2rem;
+                                padding: 0;
+                                &:hover{
+                                   color: white;
+                                }
+                            }
+                            div{
+                                position: relative;
+                                top: 0;
+                                margin-top: 0;
+                                background-color: #333333;
+                                a{
+                                    color: white;
+                                    padding: 0;
+                                    line-height: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .language{
+                    position: absolute;
+                    bottom: 4rem;
+                    left: 10%;
+                    width: 80%;
+                    text-align: center;
+                    span{
+                        font-size: 1.5rem;
+                        color: white;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+        &.en{
+            div.content{
+                div.r{
+                    display: block;
+                    opacity: 1;
+                    div.nav{
+                        ul{
+                            li{
+                                margin: 2rem auto 0;
+                                &>a{
+                                    font-size:1.5rem;
+                                }
+                                div{
+                                    a{
+                                        font-size:1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-h{
+        height: 4.5rem;
+    }
+}

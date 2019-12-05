@@ -1,0 +1,107 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.study {
+  padding: 2vw 0 0;
+  height: 36vw;
+  overflow: hidden;
+}
+.study .swiper-slide {
+  background-color: #f4f4f4;
+}
+.study .swiper-slide .slide {
+  padding: 10vw 2vw;
+  overflow: hidden;
+}
+.study .swiper-slide .slide .l {
+  width: 35%;
+  float: left;
+}
+.study .swiper-slide .slide .l p {
+  font-size: 1.8vw;
+  color: #3b3b3b;
+}
+.study .swiper-slide .slide .l h2 {
+  font-size: 6vw;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+.study .swiper-slide .slide .l span.a {
+  font-size: 3vw;
+  color: #3b3b3b;
+  display: block;
+}
+.study .swiper-slide .slide .c {
+  float: left;
+  width: 5%;
+  margin-left: 10%;
+  position: relative;
+  height: 18vw;
+}
+.study .swiper-slide .slide .c::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-right: 2px solid #3E3E3E;
+  height: 100%;
+  transform: rotate(15deg);
+}
+.study .swiper-slide .slide .r {
+  float: right;
+  width: 40%;
+  line-height: 1.5;
+}
+.study .swiper-slide .slide .r p {
+  margin: 5px 0;
+}
+@media (max-width: 1000px) {
+  .study {
+    padding: 1rem 0 0;
+    height: auto;
+  }
+  .study .swiper-slide .slide {
+    padding: 2rem 1rem;
+  }
+  .study .swiper-slide .slide .l {
+    width: 80%;
+  }
+  .study .swiper-slide .slide .l p {
+    font-size: 1.2rem;
+  }
+  .study .swiper-slide .slide .l h2 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  .study .swiper-slide .slide .l span.a {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .study .swiper-slide .slide .c {
+    float: right;
+    width: 100%;
+    position: relative;
+    height: 6rem;
+    margin: 3.5rem 0;
+  }
+  .study .swiper-slide .slide .c::before {
+    position: absolute;
+    content: '';
+    display: block;
+    border-right: 2px solid #3E3E3E;
+    height: 100%;
+    left: 50%;
+    transform: rotate(15deg);
+  }
+  .study .swiper-slide .slide .r {
+    float: right;
+    width: 100%;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+  .study .swiper-slide .slide .r p {
+    margin: 5px 0;
+  }
+}
