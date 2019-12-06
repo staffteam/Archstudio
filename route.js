@@ -30,9 +30,9 @@ let route = [
         page:'/productDetail.html'
     },
     {
-        title:'新闻中心',
-        route:'/news',
-        page:'/news.html'
+        title:'讲座',
+        route:'/chair',
+        page:'/chair.html'
     },
     {
         title:'新闻详情',
