@@ -1,0 +1,32 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.hwq .content {
+  margin: 2vw auto;
+  position: relative;
+}
+.hwq .content img {
+  width: 100%;
+}
+.hwq .content div.text {
+  position: absolute;
+  bottom: 5vw;
+  left: 10%;
+  width: 74%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5vw 3%;
+}
+@media (max-width: 1000px) {
+  .hwq .content {
+    margin: 1rem auto;
+  }
+  .hwq .content div.text {
+    position: static;
+    width: 94%;
+    padding: 1rem 3%;
+  }
+}

@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="/ContentWeb/css/publish.css">
+<script src="/ContentWeb/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="/ContentWeb/swiper/css/swiper.min.css">
+<div class="publish">
+    <ul>
+        <li onclick="slideGo(this,0)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,1)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,2)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,3)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,4)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,5)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,6)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+        <li onclick="slideGo(this,7)">
+            <a href="javascript:">
+                <p><img src="/ContentWeb/images/home_banner.jpg" alt=""></p>
+                <div>
+                    <h2>胡同茶舍</h2>
+                    <p>《设计之都 》</p>
+                    <span>中国，2016年4月</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 设计图轮播 -->
+<div class="structure-banner">
+    <div class="banner-main">
+        <div class="close" onclick="closes()"><img src="/ContentWeb/images/icon_close.png" alt=""></div>
+        <div class="swiper-container" id="structureSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/ContentWeb/images/home_banner.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev a"><img src="/ContentWeb/images/icon_l.png" alt=""></div>
+        <div class="swiper-button-next b"><img src="/ContentWeb/images/icon_r.png" alt=""></div>
+        <div class="down">
+            <a href="/ContentWeb/images/home_banner.jpg" download id="down">
+                <img src="/ContentWeb/images/icon_down.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    var structureSwiper;
+    $(function () {
+        structureSwiper = new Swiper('#structureSwiper', {
+            loop: true, // 循环模式选项
+            speed: 800,
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next.b',
+                prevEl: '.swiper-button-prev.a',
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    var _href = $('.publish ul li').eq(this.activeIndex).find('img')
+                        .attr('src');
+                    $('#down').attr('href', _href);
+                }
+            },
+        });
+    });
+
+    function slideGo(obj, index) {
+        $('.structure-banner').css({
+            'z-index': '999',
+            'opacity': '1'
+        });
+        structureSwiper.slideToLoop(index, 0, false);
+        $('#down').attr('href', $(obj).find('img').attr('src'));
+    }
+    function closes() {
+        $('.structure-banner').css({
+            'z-index': '-1',
+            'opacity': '0'
+        });
+    }
+</script>

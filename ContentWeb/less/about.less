@@ -1,0 +1,93 @@
+@import './plus.less';
+.about{
+    .top{
+        img{
+            width:100%;
+        }
+    }
+    .text{
+        overflow: hidden;
+        .l {
+            width: 35%;
+            float: left;
+            padding: 2vw 0;
+
+            p {
+                font-size: 0.9vw;
+                margin-top: 0.5vw;
+                line-height: 1.5;
+            }
+        }
+
+        .r {
+            width: 65%;
+            float: right;
+            padding: 1.8vw 0;
+        }
+    }
+}
+.team{
+    background-color: #E4E4E4;
+    padding: 2vw 0;
+    .content{
+        overflow: hidden;
+        .l {
+            width: 35%;
+            float: left;
+
+            p {
+                font-size: 0.9vw;
+                margin-top: 0.5vw;
+                line-height: 1.5;
+            }
+        }
+
+        .r {
+            width: 65%;
+            float: right;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    .about{
+        .text{
+            overflow: hidden;
+            .l {
+                width: 100%;
+                padding: 1rem 0;
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .r {
+                width: 100%;
+                float: none;
+                padding: 0 0;
+            }
+        }
+    }
+    .team{
+        background-color: #E4E4E4;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        .content{
+            overflow: hidden;
+            .l {
+                width: 100%;
+                padding: 0 0;
+                float: none;
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .r {
+                width: 100%;
+                float: none;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

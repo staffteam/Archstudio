@@ -1,0 +1,291 @@
+@import './plus.less';
+
+.honor {
+    .top {
+        position: relative;
+
+        p {
+            img {
+                width: 100%;
+            }
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60%;
+            left: 20%;
+
+            h2 {
+                font-size: 1.8vw;
+                color: rgba(255, 252, 252, 1);
+                line-height: 3vw;
+            }
+
+            p {
+                font-size: 1.8vw;
+                color: rgba(255, 252, 252, 1);
+                line-height: 3vw;
+            }
+        }
+    }
+
+    .text {
+        padding: 3vw 0;
+    }
+
+    .link {
+        width: 90%;
+        margin: 0 auto;
+        border-top: 1px solid #8C8C8C;
+        &>h2 {
+            text-align: center;
+            font-size: 1vw;
+            font-weight: bold;
+            color: rgba(66, 66, 67, 1);
+            margin-top: 2vw;
+        }
+        ul{
+            overflow: hidden;
+            margin-top: 2vw;
+            li{
+                width: calc(~"94% / 3");
+                margin-right: 3%;
+                float: left;
+                height: 18.7vw;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    display: block;
+                    position: relative;
+                    p{
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            transition: 0.5s transform;
+                            transform: scale(1);
+                        }
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                    div{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 96%;
+                        height: 96%;
+                        z-index: 9;
+                        background-color: rgba(0,0,0,0.2);
+                        padding: 3% 2%;
+                        h2{
+                            font-size: 0.85vw;
+                            color: white;
+                            text-align: left;
+                        }
+                        p{
+                            font-size: 0.85vw;
+                            color: white;
+                            margin-top: 0.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.honor-list{
+    width: 90%;
+    margin: 1.5vw auto;
+    ul{
+        overflow: hidden;
+        li{
+            width: calc(~"94% / 3");
+            margin-right: 3%;
+            float: left;
+            height: 18.7vw;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                display: block;
+                position: relative;
+                p{
+                    overflow: hidden;
+                    img{
+                        width:100%;
+                        transition: 0.5s transform;
+                        transform: scale(1);
+                    }
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 96%;
+                    height: 96%;
+                    z-index: 9;
+                    background-color: rgba(0,0,0,0.2);
+                    padding: 3% 2%;
+                    h2{
+                        font-size: 0.85vw;
+                        color: white;
+                        text-align: left;
+                    }
+                    p{
+                        font-size: 0.85vw;
+                        color: white;
+                        margin-top: 0.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+.honor-banner{
+    position: relative;
+
+    p {
+        img {
+            width: 100%;
+        }
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60%;
+        left: 20%;
+
+        h2 {
+            font-size: 1.8vw;
+            color: rgba(255, 252, 252, 1);
+            line-height: 3vw;
+        }
+
+        p {
+            font-size: 1.8vw;
+            color: rgba(255, 252, 252, 1);
+            line-height: 3vw;
+        }
+    }
+}
+@media (max-width:1000px){
+    .honor {
+        .top {
+            div {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 90%;
+                left: 5%;
+    
+                h2 {
+                    font-size: 1.2rem;
+                    color: rgba(255, 252, 252, 1);
+                    line-height: 1.5rem;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    color: rgba(255, 252, 252, 1);
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    
+        .text {
+            padding: 1rem 0;
+        }
+    
+        .link {
+            &>h2 {
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+            ul{
+                margin-top: 0;
+                li{
+                    width: 100%;
+                    margin-right: 0%;
+                    float: none;
+                    margin-top: 1rem;
+                    height: 60.4vw;
+                    a{
+                        div{
+                            width: 94%;
+                            height: 91%;
+                            padding: 3% 3%;
+                            h2{
+                                font-size: 1rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                                margin-top: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .honor-list{
+        width: 90%;
+        margin: 1.5vw auto;
+        ul{
+            margin-top: 0;
+            li{
+                width: 100%;
+                margin-right: 0%;
+                float: none;
+                margin-top: 1rem;
+                height: 60.4vw;
+                a{
+                    div{
+                        width: 94%;
+                        height: 91%;
+                        padding: 3% 3%;
+                        h2{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                            margin-top: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .honor-banner{
+        div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            left: 5%;
+
+            h2 {
+                font-size: 1.2rem;
+                color: rgba(255, 252, 252, 1);
+                line-height: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: rgba(255, 252, 252, 1);
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

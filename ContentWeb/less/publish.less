@@ -1,0 +1,217 @@
+@import './plus.less';
+
+.publish {
+    overflow: hidden;
+    min-height: calc(~"100vh - 200px");
+
+    ul {
+        width: 99%;
+        margin: 0 auto;
+        padding: 0.5vw 0;
+        overflow: hidden;
+
+        li {
+            margin: 0.8vw 0.8%;
+            width: calc(~"93.5% / 4");
+            float: left;
+            height: 11.7vw;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                div {
+                    opacity: 1;
+                }
+
+                p {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            p {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    transition: 0.5s transform;
+                }
+            }
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                padding-top: 4vw;
+                opacity: 0;
+                transition: 0.5s opacity;
+
+                h2,
+                p {
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                h2 {
+                    font-size: 1vw;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 1vw;
+                    margin-top: 0.2vw;
+                    font-weight: 600;
+                }
+
+                span {
+                    display: block;
+                    font-size: 1vw;
+                    margin-top: 0.2vw;
+                    text-align: center;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+.structure-banner{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    .banner-main {
+        width: 70%;
+        position: relative;
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 6%;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        .swiper-container {
+            width: 90%;
+
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .down {
+            position: relative;
+            top: 1vw;
+            width: 2vw;
+            margin: 0 auto;
+        }
+
+        .swiper-button-prev {
+            background-image: none;
+            width: 2vw;
+        }
+
+        .swiper-button-next {
+            background-image: none;
+            width: 2vw;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .publish {
+        overflow: hidden;
+        min-height: calc(~"100vh - 9rem");
+
+        ul {
+            width: 100%;
+            padding: 0 0;
+            margin-bottom: 0.6rem;
+
+            li {
+                margin: 0.6rem 2.5% 0;
+                width: 95%;
+                height: 48vw;
+
+                div {
+                    padding-top: 15vw;
+                    opacity: 1;
+
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        margin-top: 0.2rem;
+                    }
+
+                    span {
+                        margin-top: 0.2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .structure-banner{
+        .banner-main {
+            width: 100%;
+
+            .close {
+                top: 0.5rem;
+                right: 0.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            .swiper-container {
+                width: 100%;
+
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .down {
+                position: relative;
+                top: 1rem;
+                width: 2rem;
+                margin: 0 auto;
+            }
+
+            .swiper-button-prev {
+                width: 1.5rem;
+                display: none;
+            }
+
+            .swiper-button-next {
+                width: 1.5rem;
+                display: none;
+            }
+        }
+    }
+}

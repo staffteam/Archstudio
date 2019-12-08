@@ -1,0 +1,85 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.about .top img {
+  width: 100%;
+}
+.about .text {
+  overflow: hidden;
+}
+.about .text .l {
+  width: 35%;
+  float: left;
+  padding: 2vw 0;
+}
+.about .text .l p {
+  font-size: 0.9vw;
+  margin-top: 0.5vw;
+  line-height: 1.5;
+}
+.about .text .r {
+  width: 65%;
+  float: right;
+  padding: 1.8vw 0;
+}
+.team {
+  background-color: #E4E4E4;
+  padding: 2vw 0;
+}
+.team .content {
+  overflow: hidden;
+}
+.team .content .l {
+  width: 35%;
+  float: left;
+}
+.team .content .l p {
+  font-size: 0.9vw;
+  margin-top: 0.5vw;
+  line-height: 1.5;
+}
+.team .content .r {
+  width: 65%;
+  float: right;
+}
+@media (max-width: 1000px) {
+  .about .text {
+    overflow: hidden;
+  }
+  .about .text .l {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .about .text .l h2 {
+    font-size: 1.5rem;
+  }
+  .about .text .r {
+    width: 100%;
+    float: none;
+    padding: 0 0;
+  }
+  .team {
+    background-color: #E4E4E4;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  .team .content {
+    overflow: hidden;
+  }
+  .team .content .l {
+    width: 100%;
+    padding: 0 0;
+    float: none;
+  }
+  .team .content .l h2 {
+    font-size: 1.5rem;
+  }
+  .team .content .r {
+    width: 100%;
+    float: none;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,257 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.honor .top {
+  position: relative;
+}
+.honor .top p img {
+  width: 100%;
+}
+.honor .top div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  left: 20%;
+}
+.honor .top div h2 {
+  font-size: 1.8vw;
+  color: #fffcfc;
+  line-height: 3vw;
+}
+.honor .top div p {
+  font-size: 1.8vw;
+  color: #fffcfc;
+  line-height: 3vw;
+}
+.honor .text {
+  padding: 3vw 0;
+}
+.honor .link {
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #8C8C8C;
+}
+.honor .link > h2 {
+  text-align: center;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #424243;
+  margin-top: 2vw;
+}
+.honor .link ul {
+  overflow: hidden;
+  margin-top: 2vw;
+}
+.honor .link ul li {
+  width: calc(94% / 3);
+  margin-right: 3%;
+  float: left;
+  height: 18.7vw;
+}
+.honor .link ul li:last-child {
+  margin-right: 0;
+}
+.honor .link ul li a {
+  display: block;
+  position: relative;
+}
+.honor .link ul li a p {
+  overflow: hidden;
+}
+.honor .link ul li a p img {
+  width: 100%;
+  transition: 0.5s transform;
+  transform: scale(1);
+}
+.honor .link ul li a:hover img {
+  transform: scale(1.1);
+}
+.honor .link ul li a div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 96%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3% 2%;
+}
+.honor .link ul li a div h2 {
+  font-size: 0.85vw;
+  color: white;
+  text-align: left;
+}
+.honor .link ul li a div p {
+  font-size: 0.85vw;
+  color: white;
+  margin-top: 0.5vw;
+}
+.honor-list {
+  width: 90%;
+  margin: 1.5vw auto;
+}
+.honor-list ul {
+  overflow: hidden;
+}
+.honor-list ul li {
+  width: calc(94% / 3);
+  margin-right: 3%;
+  float: left;
+  height: 18.7vw;
+}
+.honor-list ul li:last-child {
+  margin-right: 0;
+}
+.honor-list ul li a {
+  display: block;
+  position: relative;
+}
+.honor-list ul li a p {
+  overflow: hidden;
+}
+.honor-list ul li a p img {
+  width: 100%;
+  transition: 0.5s transform;
+  transform: scale(1);
+}
+.honor-list ul li a:hover img {
+  transform: scale(1.1);
+}
+.honor-list ul li a div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 96%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3% 2%;
+}
+.honor-list ul li a div h2 {
+  font-size: 0.85vw;
+  color: white;
+  text-align: left;
+}
+.honor-list ul li a div p {
+  font-size: 0.85vw;
+  color: white;
+  margin-top: 0.5vw;
+}
+.honor-banner {
+  position: relative;
+}
+.honor-banner p img {
+  width: 100%;
+}
+.honor-banner div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  left: 20%;
+}
+.honor-banner div h2 {
+  font-size: 1.8vw;
+  color: #fffcfc;
+  line-height: 3vw;
+}
+.honor-banner div p {
+  font-size: 1.8vw;
+  color: #fffcfc;
+  line-height: 3vw;
+}
+@media (max-width: 1000px) {
+  .honor .top div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    left: 5%;
+  }
+  .honor .top div h2 {
+    font-size: 1.2rem;
+    color: #fffcfc;
+    line-height: 1.5rem;
+  }
+  .honor .top div p {
+    font-size: 1.2rem;
+    color: #fffcfc;
+    line-height: 1.5rem;
+  }
+  .honor .text {
+    padding: 1rem 0;
+  }
+  .honor .link > h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .honor .link ul {
+    margin-top: 0;
+  }
+  .honor .link ul li {
+    width: 100%;
+    margin-right: 0%;
+    float: none;
+    margin-top: 1rem;
+    height: 60.4vw;
+  }
+  .honor .link ul li a div {
+    width: 94%;
+    height: 91%;
+    padding: 3% 3%;
+  }
+  .honor .link ul li a div h2 {
+    font-size: 1rem;
+  }
+  .honor .link ul li a div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .honor-list {
+    width: 90%;
+    margin: 1.5vw auto;
+  }
+  .honor-list ul {
+    margin-top: 0;
+  }
+  .honor-list ul li {
+    width: 100%;
+    margin-right: 0%;
+    float: none;
+    margin-top: 1rem;
+    height: 60.4vw;
+  }
+  .honor-list ul li a div {
+    width: 94%;
+    height: 91%;
+    padding: 3% 3%;
+  }
+  .honor-list ul li a div h2 {
+    font-size: 1rem;
+  }
+  .honor-list ul li a div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .honor-banner div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    left: 5%;
+  }
+  .honor-banner div h2 {
+    font-size: 1.2rem;
+    color: #fffcfc;
+    line-height: 1.5rem;
+  }
+  .honor-banner div p {
+    font-size: 1.2rem;
+    color: #fffcfc;
+    line-height: 1.5rem;
+  }
+}
