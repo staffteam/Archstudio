@@ -95,22 +95,30 @@ input:focus {
 }
 
 .content {
-    max-width: 1180px;
-    padding: 0 10px;
+    max-width: 70%;
     margin: 0 auto;
 }
+
 .footer {
     padding: 40px 0;
     text-align: center;
     font-size: 14px;
     color: rgba(137, 137, 137, 1);
 }
+
+@media (max-width: 1500px) {
+    .content {
+        max-width: 90%;
+    }
+}
+
 @media (max-width:1000px) {
     .content {
         max-width: 94%;
         padding: 0 0;
         margin: 0 auto;
     }
+
     .footer {
         padding: 1rem 0;
         font-size: 1rem;
@@ -120,4 +128,3 @@ input:focus {
 .en {
     display: none;
 }
-
