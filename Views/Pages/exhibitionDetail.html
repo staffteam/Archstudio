@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/ContentWeb/css/exhibitionDetail.css">
+<script src="/ContentWeb/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="/ContentWeb/swiper/css/swiper.min.css">
+<div class="exhibition-detail">
+    <div class="title">
+        “水岸佛堂”和“扭院儿”获邀参加“合应自然——2017北京国际设计周主题展”，北京中华世纪坛，2017.10
+    </div>
+    <div class="swiper-container" id="exhibitionSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <p class="s"><img src="/ContentWeb/images/exhibition-banner1.jpg" alt=""></p>
+                    <p class="h"><img src="/ContentWeb/images/exhibition-banner2.jpg" alt=""></p>
+                </div>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"><img src="/ContentWeb/images/left.png" alt=""></div>
+        <div class="swiper-button-next"><img src="/ContentWeb/images/right.png" alt=""></div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var mySwiper = new Swiper('#exhibitionSwiper', {
+            loop: true, // 循环模式选项
+            speed: 800,
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            //     delay: 5000,
+            //     stopOnLastSlide: false,
+            //     disableOnInteraction: true,
+            // }
+        })
+    })
+</script>

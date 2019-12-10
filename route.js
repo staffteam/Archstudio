@@ -72,6 +72,16 @@ let route = [{
         title: '展览',
         route: '/exhibition',
         page: '/exhibition.html'
+    },
+    {
+        title: '线上',
+        route: '/onLine',
+        page: '/onLine.html'
+    },
+    {
+        title: '展览详情',
+        route: '/exhibitionDetail',
+        page: '/exhibitionDetail.html'
     }
 ];
 module.exports = route;

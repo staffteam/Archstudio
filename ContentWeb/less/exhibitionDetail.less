@@ -1,0 +1,93 @@
+@import './plus.less';
+
+.exhibition-detail {
+    .title {
+        padding: 3vw 3vw 2vw;
+        font-size: 18px;
+    }
+
+    #exhibitionSwiper {
+        background-color: #f6f6f6;
+        .swiper-slide {
+            .slide {
+                width: 90%;
+                overflow: hidden;
+                padding: 2% 0;
+                box-sizing: border-box;
+                margin: 0 auto;
+                p {
+                    overflow: hidden;
+                    height: 38.5vw;
+                    &:first-child{
+                        float:left;
+                        width: 30.5%;
+                    }
+                    &:last-child{
+                        float: right;
+                        width: 64.5%;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.05) translateY(-50%);
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        position: relative;
+                        top: 50%;
+                        transform: scale(1) translateY(-50%);
+                        transition: 0.5s transform;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-button-prev,.swiper-button-next{
+    background-image: none !important;
+}
+@media (max-width:1000px){
+    .exhibition-detail {
+        .title {
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+    
+        #exhibitionSwiper {
+            background-color: #f6f6f6;
+            .swiper-slide {
+                .slide {
+                    width: 90%;
+                    overflow: hidden;
+                    padding: 1rem 0;
+                    box-sizing: border-box;
+                    margin: 0 auto;
+                    p {
+                        overflow: hidden;
+                        height: auto;
+                        margin: 0 auto;
+                        &:first-child{
+                            float:none;
+                            width: 90%;
+                        }
+                        &:last-child{
+                            float: none;
+                            width: 90%;
+                            margin-top: 1rem;
+                        }
+                        img{
+                            position: static;
+                            transform: scale(1) translateY(0);
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev,.swiper-button-next{
+               opacity: 0.5;
+               width: 1.5rem;
+            }
+        }
+    }
+}
