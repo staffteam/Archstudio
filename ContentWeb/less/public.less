@@ -128,3 +128,151 @@ input:focus {
 .en {
     display: none;
 }
+
+.service-area {
+    .content {
+        position: relative;
+    }
+
+    .title {
+        padding: 3vw 0;
+        line-height: 2vw;
+
+        h2 {
+            display: inline-block;
+            font-size: 1.5vw;
+        }
+
+        p {
+            display: inline-block;
+            margin-left: 12vw;
+            font-size: 0.9vw;
+        }
+    }
+
+    #serviceArea {
+        ul {
+            overflow: hidden;
+
+            li {
+                width: 25%;
+                float: left;
+                height: 12vw;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .area-banner {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -1px;
+            top: 0;
+            height: 100%;
+            bottom: 0;
+            width: 2px;
+            background-color: white;
+            z-index: 999;
+        }
+
+        position: relative;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-image: none;
+        }
+
+        .swiper-button-next {
+            right: -4vw;
+        }
+
+        .swiper-button-prev {
+            left: -4vw;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .service-area {
+        .content {
+            position: relative;
+        }
+
+        .title {
+            padding: 1rem 0;
+            line-height: 1.5rem;
+
+            h2 {
+                display: block;
+                font-size: 1.2rem;
+            }
+
+            p {
+                display: block;
+                margin-left: 0;
+                font-size: 1rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        #serviceArea {
+            ul {
+                overflow: hidden;
+
+                li {
+                    width: 50%;
+                    float: left;
+                    height: 30vw;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .area-banner {
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                right: -1px;
+                top: 0;
+                height: 100%;
+                bottom: 0;
+                width: 2px;
+                background-color: white;
+                z-index: 999;
+            }
+
+            position: relative;
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                background-image: none;
+                display: none;
+            }
+
+            .swiper-button-next {
+                right: -4vw;
+            }
+
+            .swiper-button-prev {
+                left: -4vw;
+            }
+        }
+    }
+}

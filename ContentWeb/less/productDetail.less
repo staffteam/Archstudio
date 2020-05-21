@@ -68,6 +68,7 @@
                         float: left;
                         overflow: hidden;
                         cursor: pointer;
+                        background-color: white;
 
                         img {
                             max-width: none;
@@ -95,10 +96,15 @@
                     margin: 0.6vw 1%;
                     float: left;
                     cursor: pointer;
-                    height: 7.7vw;
-                    overflow: hidden;
-                    img {
-                        width: 100%;
+
+                    div{
+                        margin-top: 1vw;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -106,8 +112,9 @@
     }
 }
 
-.structure-banner,.list-banner {
-    background-color: rgba(0, 0, 0, 0.6);
+.structure-banner,
+.list-banner {
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     left: 0;
@@ -118,30 +125,43 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
+
     .banner-main {
         width: 70%;
         position: relative;
-        .close{
+
+        .close {
             position: absolute;
-            top: 10px;
+            top: 4vh;
             right: 6%;
             z-index: 999;
             cursor: pointer;
         }
-        .swiper-container{
+
+        .swiper-container {
             width: 90%;
-            .swiper-slide{
-                img{
-                    width:100%;
+
+            .swiper-slide {
+                height: 90vh;
+                padding: 5vh 0;
+
+                img {
+                    max-width: 99%;
+                    max-height: 100%;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
             }
         }
-        .down{
+
+        .down {
             position: relative;
-            top: 1vw;
+            top: -4vh;
             width: 2vw;
             margin: 0 auto;
         }
+
         .swiper-button-prev {
             background-image: none;
             width: 2vw;
@@ -174,47 +194,48 @@
     }
 }
 
-@media (max-width:1000px){
+@media (max-width:1000px) {
     .detail {
         .text {
             width: 95%;
             padding: 1rem 0;
-    
+
             div.l {
                 width: 100%;
                 float: none;
                 font-size: 1.8rem;
                 text-align: center;
             }
-    
+
             div.r {
                 width: 100%;
                 float: none;
             }
         }
-    
+
         .structure {
             background-color: #c6c6c6;
-    
+
             .content {
                 width: 95%;
+
                 .l {
                     width: 100%;
                     float: none;
                     padding: 0 0;
-    
+
                     p {
                         font-size: 1rem;
                         margin-top: 0.5rem;
                         line-height: 1.5;
                     }
                 }
-    
+
                 .r {
                     width: 100%;
                     float: none;
                     padding: 1rem 0;
-    
+
                     ul {
                         li {
                             width: 46%;
@@ -225,51 +246,50 @@
                 }
             }
         }
-    
+
         .list {
             .content {
                 width: 95%;
                 margin: 0.5rem auto;
-    
+
                 ul {
                     li {
                         width: 46%;
                         margin: 0.5rem 2%;
-                        height: 27vw;
                     }
                 }
             }
         }
     }
-    
-    .structure-banner,.list-banner {
+
+    .structure-banner,
+    .list-banner {
         .banner-main {
             width: 100%;
-            .close{
-                top: 0.5rem;
-                right: 0.5rem;
-                width: 1.5rem;
-                height: 1.5rem;
+
+            .close {
+                top: 10vh;
+                right: 1rem;
+                width: 2rem;
+                height: 2rem;
             }
-            .swiper-container{
+
+            .swiper-container {
                 width: 100%;
-                .swiper-slide{
-                    img{
-                        width:100%;
-                    }
-                }
             }
-            .down{
+
+            .down {
                 position: relative;
-                top: 1rem;
+                top: -4vh;
                 width: 2rem;
                 margin: 0 auto;
             }
+
             .swiper-button-prev {
                 width: 1.5rem;
                 display: none;
             }
-    
+
             .swiper-button-next {
                 width: 1.5rem;
                 display: none;

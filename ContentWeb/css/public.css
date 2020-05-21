@@ -113,3 +113,115 @@ input:focus {
 .en {
   display: none;
 }
+.service-area .content {
+  position: relative;
+}
+.service-area .title {
+  padding: 3vw 0;
+  line-height: 2vw;
+}
+.service-area .title h2 {
+  display: inline-block;
+  font-size: 1.5vw;
+}
+.service-area .title p {
+  display: inline-block;
+  margin-left: 12vw;
+  font-size: 0.9vw;
+}
+.service-area #serviceArea ul {
+  overflow: hidden;
+}
+.service-area #serviceArea ul li {
+  width: 25%;
+  float: left;
+  height: 12vw;
+}
+.service-area #serviceArea ul li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.service-area .area-banner {
+  position: relative;
+}
+.service-area .area-banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  z-index: 999;
+}
+.service-area .area-banner .swiper-button-next,
+.service-area .area-banner .swiper-button-prev {
+  background-image: none;
+}
+.service-area .area-banner .swiper-button-next {
+  right: -4vw;
+}
+.service-area .area-banner .swiper-button-prev {
+  left: -4vw;
+}
+@media (max-width: 1000px) {
+  .service-area .content {
+    position: relative;
+  }
+  .service-area .title {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+  }
+  .service-area .title h2 {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .service-area .title p {
+    display: block;
+    margin-left: 0;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .service-area #serviceArea ul {
+    overflow: hidden;
+  }
+  .service-area #serviceArea ul li {
+    width: 50%;
+    float: left;
+    height: 30vw;
+  }
+  .service-area #serviceArea ul li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .service-area .area-banner {
+    position: relative;
+  }
+  .service-area .area-banner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+    z-index: 999;
+  }
+  .service-area .area-banner .swiper-button-next,
+  .service-area .area-banner .swiper-button-prev {
+    background-image: none;
+    display: none;
+  }
+  .service-area .area-banner .swiper-button-next {
+    right: -4vw;
+  }
+  .service-area .area-banner .swiper-button-prev {
+    left: -4vw;
+  }
+}

@@ -56,17 +56,24 @@
     <div class="list">
         <div class="content">
             <ul id="listContent">
-                <li onclick="slideGo2(this,0)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,1)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,2)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,3)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,4)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,5)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,6)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,7)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,8)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
-                <li onclick="slideGo2(this,9)"><img src="/ContentWeb/images/product-list.jpg" alt=""></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
+            <div id="listContentHtml" style="display:none;">
+                <div onclick="slideGo2(this,0)"><img src="/ContentWeb/images/A/A2.jpg" alt=""></div>
+                <div onclick="slideGo2(this,1)"><img src="/ContentWeb/images/A/A3.jpg" alt=""></div>
+                <div onclick="slideGo2(this,2)"><img src="/ContentWeb/images/A/A4.jpg" alt=""></div>
+                <div onclick="slideGo2(this,3)"><img src="/ContentWeb/images/A/A5.jpg" alt=""></div>
+                <div onclick="slideGo2(this,4)"><img src="/ContentWeb/images/A/A6.jpg" alt=""></div>
+                <div onclick="slideGo2(this,5)"><img src="/ContentWeb/images/A/A23.jpg" alt=""></div>
+                <div onclick="slideGo2(this,6)"><img src="/ContentWeb/images/A/A8.jpg" alt=""></div>
+                <div onclick="slideGo2(this,7)"><img src="/ContentWeb/images/A/A9.jpg" alt=""></div>
+                <div onclick="slideGo2(this,8)"><img src="/ContentWeb/images/A/A10.jpg" alt=""></div>
+                <div onclick="slideGo2(this,9)"><img src="/ContentWeb/images/A/A11.jpg" alt=""></div>
+            </div>
         </div>
     </div>
 </div>
@@ -152,14 +159,24 @@
             },
             on: {
                 slideChangeTransitionStart: function () {
-                    var _href = $('#listContent li').eq(this.activeIndex).find('img')
+                    var _href = $('#listContentHtml div').eq(this.activeIndex).find('img')
                         .attr('src');
                     $('#down2').attr('href', _href);
                 }
             },
         });
     });
-
+    var _i = 0;
+    $('#listContentHtml div').each(function (value, index) {
+        $('#listContent li').eq(_i).append($(this));
+        //最后一个
+        if ((_i + 1) % 5 == 0) {
+            _i=0;
+        }else{
+            _i++;
+        }
+    })
+    
     function slideGo(obj, index) {
         $('.structure-banner').css({
             'z-index': '999',

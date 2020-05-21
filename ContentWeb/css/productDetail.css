@@ -62,6 +62,7 @@
   float: left;
   overflow: hidden;
   cursor: pointer;
+  background-color: white;
 }
 .detail .structure .content .r ul li img {
   max-width: none;
@@ -81,15 +82,19 @@
   margin: 0.6vw 1%;
   float: left;
   cursor: pointer;
-  height: 7.7vw;
-  overflow: hidden;
 }
-.detail .list .content ul li img {
+.detail .list .content ul li div {
+  margin-top: 1vw;
+}
+.detail .list .content ul li div:first-child {
+  margin-top: 0;
+}
+.detail .list .content ul li div img {
   width: 100%;
 }
 .structure-banner,
 .list-banner {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -109,7 +114,7 @@
 .structure-banner .banner-main .close,
 .list-banner .banner-main .close {
   position: absolute;
-  top: 10px;
+  top: 4vh;
   right: 6%;
   z-index: 999;
   cursor: pointer;
@@ -118,14 +123,23 @@
 .list-banner .banner-main .swiper-container {
   width: 90%;
 }
+.structure-banner .banner-main .swiper-container .swiper-slide,
+.list-banner .banner-main .swiper-container .swiper-slide {
+  height: 90vh;
+  padding: 5vh 0;
+}
 .structure-banner .banner-main .swiper-container .swiper-slide img,
 .list-banner .banner-main .swiper-container .swiper-slide img {
-  width: 100%;
+  max-width: 99%;
+  max-height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .structure-banner .banner-main .down,
 .list-banner .banner-main .down {
   position: relative;
-  top: 1vw;
+  top: -4vh;
   width: 2vw;
   margin: 0 auto;
 }
@@ -198,7 +212,6 @@
   .detail .list .content ul li {
     width: 46%;
     margin: 0.5rem 2%;
-    height: 27vw;
   }
   .structure-banner .banner-main,
   .list-banner .banner-main {
@@ -206,23 +219,19 @@
   }
   .structure-banner .banner-main .close,
   .list-banner .banner-main .close {
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: 10vh;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
   }
   .structure-banner .banner-main .swiper-container,
   .list-banner .banner-main .swiper-container {
     width: 100%;
   }
-  .structure-banner .banner-main .swiper-container .swiper-slide img,
-  .list-banner .banner-main .swiper-container .swiper-slide img {
-    width: 100%;
-  }
   .structure-banner .banner-main .down,
   .list-banner .banner-main .down {
     position: relative;
-    top: 1rem;
+    top: -4vh;
     width: 2rem;
     margin: 0 auto;
   }
