@@ -172,13 +172,22 @@
     $('#listContentHtml div').each(function (value, index) {
         $('#listContent li').eq(_i).append($(this));
         //最后一个
-        if ((_i + 1) % 5 == 0) {
-            _i=0;
-        }else{
-            _i++;
+        if ($(window).width() > 800) {
+            if ((_i + 1) % 5 == 0) {
+                _i = 0;
+            } else {
+                _i++;
+            }
+        } else {
+            if ((_i + 1) % 2 == 0) {
+                _i = 0;
+            } else {
+                _i++;
+            }
         }
+
     })
-    
+
     function slideGo(obj, index) {
         $('.structure-banner').css({
             'z-index': '999',

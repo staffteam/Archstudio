@@ -103,7 +103,7 @@
 
         .close {
             position: absolute;
-            top: 10px;
+            top: 30px;
             right: 6%;
             z-index: 999;
             cursor: pointer;
@@ -111,10 +111,16 @@
 
         .swiper-container {
             width: 90%;
-
+            .swiper-slide {
+                height: 90vh;
+                padding: 5vh 0;
+            }
             .swiper-slide {
                 img {
-                    width: 100%;
+                    max-height: 100%;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
             }
         }
@@ -180,10 +186,10 @@
             width: 100%;
 
             .close {
-                top: 0.5rem;
+                top: 10vh;
                 right: 0.5rem;
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 2rem;
+                height: 2rem;
             }
 
             .swiper-container {
