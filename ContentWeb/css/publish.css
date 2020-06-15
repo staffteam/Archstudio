@@ -111,9 +111,10 @@
 }
 .structure-banner .banner-main .down {
   position: relative;
-  top: 1vw;
+  top: -3vw;
   width: 2vw;
   margin: 0 auto;
+  z-index: 999;
 }
 .structure-banner .banner-main .swiper-button-prev {
   background-image: none;

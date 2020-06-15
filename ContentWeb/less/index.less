@@ -120,6 +120,13 @@
 }
 
 @media (max-width:1000px) {
+    div.header{
+        opacity:1;
+    }
+    .header-h{
+        display: block;
+        height: 4.5rem;
+    }
     .home-main {
         margin-top: 1rem;
         height: 16rem;
@@ -127,7 +134,6 @@
         .swiper-slide {
             padding-top: 4rem;
             padding-bottom: 2rem;
-
             .slide {
                 padding: 0 1rem;
 
@@ -156,28 +162,51 @@
 
     .product {
         .swiper-container {
-            height: 100vh;
+            height: calc(~"100vh - 4.5rem");
         }
 
         .swiper-slide {
-            height: 100vh;
+            height: calc(~"100vh - 4.5rem");
             width: 100%;
 
             .slide {
-                p {
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
+                height: 100%;
+                a{
+                    display: block;
+                    height: 100%;
+                    &>p {
+                        height: 35%;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
 
                 div {
-                    left: 5%;
-                    bottom: 5%;
-                    width: 90%;
+                    left: 0%;
+                    bottom:0%;
+                    width: 100%;
                     box-sizing: border-box;
-                    padding: 1rem 1rem 1rem;
+                    height: 65%;
+                    padding: 3rem 2rem 1rem;
+                    overflow-y: auto;
+                    h2{
+                        text-align: center;
+                        font-size: 1.5rem
+                    }
+                    p{
+                        .lines();
+                        line-height: 2rem;
+                        -webkit-line-clamp:6;
+                        height: 12rem;
+                        font-size: 1.2rem;
+                    }
+                    span{
+                        margin-top: 0.5rem;
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
