@@ -53,7 +53,7 @@
   padding: 30px 1vw;
   display: block;
   line-height: 40px;
-  font-size: 22px;
+  font-size: 18px;
   transition: 0.1s all;
   font-weight: 400;
   color: #333333;
@@ -73,7 +73,7 @@
   transition: 0.5s height, 0.5s opacity, 0.5s margin-top;
 }
 .header .content div.r div.nav ul li div a {
-  font-size: 16px;
+  font-size: 14px;
   display: block;
   padding: 15px 0;
   text-align: center;
@@ -85,7 +85,7 @@
 .header .content div.r div.language {
   float: right;
   line-height: 100px;
-  font-size: 22px;
+  font-size: 18px;
 }
 .header .content div.r div.language span {
   cursor: pointer;
